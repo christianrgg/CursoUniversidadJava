@@ -29,6 +29,22 @@ public class HolaMundo {
         miVariableCadena2 = "Soy cadena con atajo";
         System.out.println("miVariableCadena2 = " + miVariableCadena2);
         
+        //No es posible usar numeros o caracteres especiales para definir una variable
+        // Ejemplo var 1MiVariable = 3;
+        
+        // Guion bajo _ y simbolo de mondeda "$" si estan permitidos. 
+        var _MiVariable = 3;
+        System.out.println(_MiVariable);
+        
+        var $MiVariable = 3;
+        System.out.println($MiVariable);
+        
+         // Tambien es posible usar acentos pero no es recomendable al nombrar variables
+         
+        
+        
+        
+        
     }
 }
 
