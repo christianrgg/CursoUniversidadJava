@@ -1,61 +1,35 @@
 
 public class HolaMundo {
-    public static void main(String args[]){
-         // Variable Entera
-        int miVariableEntera = 10;
-        System.out.println(miVariableEntera);
+
+    public static void main(String args[]) {
+        var nombre = "Christian Roberto";
+        var apellidos = "Garcia Gutierrez";
+
+        var nombreCompleto = nombre + " " + apellidos;
+        System.out.println("nombreCompleto = " + nombreCompleto);
+
+        //Para alinear caracteres clic derechos + Format
+        //Palabras reservadas en JAVA
+            //abstract	continue	for	new	switch
+            //assert	default	goto	package	synchronized
+            //boolean	do	if	private	this
+            //break	double	implements	protected	throw
+            //byte	else	import	public	thows
+            //case	enum	instanceof	return	transient
+            //catch	extends	int	short	try
+            //char	final	interface	static	void
+            //class	finally	long	strictfp	volatile
+            //const	float	native	super	while
         
-        // Modificamos el valor de la variable entera
-        miVariableEntera = 5;
-        // Atajo para la siguiente line sout + TAB
-        System.out.println(miVariableEntera);
+        var i = 3;
+        var j = 5;
+        System.out.println(i + j);
+        System.out.println(i +j +nombreCompleto);
         
-         // Variable String
-         String miVariableCadena = "Holis";
-         System.out.println(miVariableCadena);
-         
-         miVariableCadena = "Holis, deja de ignorarme";
-         System.out.println(miVariableCadena);
-         
-        // VAR - Inferencia de tipos en JAVA
-        // Infiere el leteral o valor de la variable para ya no colocar int o string
-        var miVariableEntera2 = 15;
-        System.out.println(miVariableEntera2);
+        //Contexto cadena, si encuentra al concatenar primero una cadena, todo lo demás concatenado sera cadena
+        System.out.println(nombreCompleto + i + j);
         
-        var miVariableCadena2 = "Soy cadena";
-        System.out.println(miVariableCadena2);
-        
-        //Atajo para imprimir ultima variable soutv + TAB
-        miVariableCadena2 = "Soy cadena con atajo";
-        System.out.println("miVariableCadena2 = " + miVariableCadena2);
-        
-        //No es posible usar numeros o caracteres especiales para definir una variable
-        // Ejemplo var 1MiVariable = 3;
-        
-        // Guion bajo _ y simbolo de mondeda "$" si estan permitidos. 
-        var _MiVariable = 3;
-        System.out.println(_MiVariable);
-        
-        var $MiVariable = 3;
-        System.out.println($MiVariable);
-        
-         // Tambien es posible usar acentos pero no es recomendable al nombrar variables
-         
-        
-        
-        
-        
+        // Con parentesis se eliminaria el contexto cadena
+        System.out.println(nombreCompleto + (i +j));
     }
 }
-
-
-/*PASOS PARA CREAR PROYECTO SENCILLO EN JAVA 
-	1. Clic en new Proyect
-	2. Seleccionar java with ant
-	3. En projects seleccionar Java with aplication
-	4. Clic en next y esperar a que se habilite la caracteristica del ide
-	5. Colocar nombre del proyecto "HolaMundoJava"
-	6. Colocar ubicación del proyecto lo más cercana a la raiz
-	7. Crear clase HolaMundo
-	8. Clic en finish
-*/
