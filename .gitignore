@@ -1,0 +1,24 @@
+# Ignorar archivos compilados y generados
+*.class
+*.jar
+*.war
+*.ear
+target/
+
+# Ignorar archivos de configuración de IDEs comunes
+.idea/
+.vscode/
+
+# Ignorar archivos de dependencias y bibliotecas descargadas
+lib/
+libs/
+vendor/
+
+# Ignorar archivos de compilación
+build/
+out/
+
+# Ignorar archivos de registro y respaldo
+*.log
+*.bak
+*.swp
