@@ -16,6 +16,18 @@ public class HolaMundo {
          
          miVariableCadena = "Holis, deja de ignorarme";
          System.out.println(miVariableCadena);
+         
+        // VAR - Inferencia de tipos en JAVA
+        // Infiere el leteral o valor de la variable para ya no colocar int o string
+        var miVariableEntera2 = 15;
+        System.out.println(miVariableEntera2);
+        
+        var miVariableCadena2 = "Soy cadena";
+        System.out.println(miVariableCadena2);
+        
+        //Atajo para imprimir ultima variable soutv + TAB
+        miVariableCadena2 = "Soy cadena con atajo";
+        System.out.println("miVariableCadena2 = " + miVariableCadena2);
         
     }
 }
