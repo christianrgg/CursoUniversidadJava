@@ -1,8 +1,22 @@
 
 public class HolaMundo {
     public static void main(String args[]){
+         // Variable Entera
         int miVariableEntera = 10;
         System.out.println(miVariableEntera);
+        
+        // Modificamos el valor de la variable entera
+        miVariableEntera = 5;
+        // Atajo para la siguiente line sout + TAB
+        System.out.println(miVariableEntera);
+        
+         // Variable String
+         String miVariableCadena = "Holis";
+         System.out.println(miVariableCadena);
+         
+         miVariableCadena = "Holis, deja de ignorarme";
+         System.out.println(miVariableCadena);
+        
     }
 }
 
