@@ -1,32 +1,19 @@
 
-import java.util.Scanner;
-
-
 public class HolaMundo {
 
     public static void main(String args[]) {
        /*
-        Tipos primitivos enteros: byte(8 bits), short(1 bits), int(32bits), long (64 bits)
+        Tipos primitivos flotantes: float y double
         */
        
-       byte numeroByte = 127;
-        System.out.println("Valor minimo byte" + Byte.MIN_VALUE);
-        System.out.println("Valor maximo byte" + Byte.MAX_VALUE);
-        //A partir del numero 128 ya no se guardará o copilará marcara perdida de presicion
-        
-        short numeroShort = 32767;
-        System.out.println("numeroShort = " + numeroShort);
-        System.out.println("Valor minimo short" + Short.MIN_VALUE);
-        System.out.println("Valor maximo short" + Short.MAX_VALUE);
-        
-        int numeroEntero = 2147483647;
-        System.out.println("numeroEntero = " + numeroEntero);
-        System.out.println("Valor minimo Int" + Integer.MIN_VALUE);
-        System.out.println("Valor maximo Int" + Integer.MAX_VALUE);
-        
-        long numeroLong = 9223372036854775807;
-        System.out.println("numeroLong = " + numeroLong);
-        System.out.println("Valor minimo Long" + Long.MIN_VALUE);
-        System.out.println("Valor maximo Long" + Long.MAX_VALUE);
+       float numeroFloat = 3.4028235E38F;
+        System.out.println("numeroFloat = " + numeroFloat);
+        System.out.println("Valor minimo tipo float" + Float.MIN_VALUE);
+        System.out.println("Valor maximo tipo float" + Float.MAX_VALUE);
+       
+        double numeroDouble = 1.7976931348623157E308;  //Soporta enteros y decimales
+        System.out.println("numeroDouble = " + numeroDouble);
+        System.out.println("Valor minimo tipo double" + Double.MIN_VALUE);
+        System.out.println("Valor maximo tipo double" + Double.MAX_VALUE);
     }
 }
