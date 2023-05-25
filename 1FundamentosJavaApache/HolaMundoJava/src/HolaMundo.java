@@ -1,6 +1,5 @@
 
 /*
-Operadores aritmeticos: +, -, *, /, %
 Operadores de relacion: <, >, <=, >=, !=, ==
 Operadores logicos: && o &, || o |, !, ^
 Operadores unitarios: ~, -
@@ -13,32 +12,33 @@ Prioridad y orden de evaluación: (), [], ., - ~ ! ++ --, new(tipo)expresion, <<
 */
 
 public class HolaMundo {
-
+    
     public static void main(String args[]) {
+        
         int a=3, b=2;
-        var resultado = a +b;
-        System.out.println("resultado de la suma= " + resultado);
+        int c = a + 5 -b;
+        System.out.println("c = " + c);
         
-        resultado = a - b;
-        System.out.println("resultado de la resta= " + resultado);
+        var d = a==c;
+        System.out.println("d = " + d);
         
-        resultado = a * b;
-        System.out.println("resultado de multiplicación = " + resultado);
+        a +=1; // a= a +1;
+        System.out.println("a = " + a);
         
-        resultado = a / b;
-        System.out.println("resultado de  división= " + resultado);
+        a +=3; // a= a +1;
+        System.out.println("a = " + a);
         
-        var resultado2 = 3.2/b;
-        System.out.println("resultado2 = " + resultado2);
+        a -=2; // a= a +1;
+        System.out.println("a = " + a);
         
-        resultado = a % b;
-        System.out.println("resultado modulo = " + resultado);
+        a *=4; // a= a +1;
+        System.out.println("a = " + a);
         
-        //Si solo es una linea de codigo lo que ira dentro del if o else se pueden omitir las llaves
-        if(b % 2 == 0 ) 
-            System.out.println("Es numero par");
-        else 
-            System.out.println("Es numero impar");
+        a /=3; // a= a +1;
+        System.out.println("a = " + a);
+        
+        a %=1; // a= a +1;
+        System.out.println("a = " + a);
 
     }
 }
