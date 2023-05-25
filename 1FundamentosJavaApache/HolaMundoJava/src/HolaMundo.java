@@ -2,34 +2,22 @@
 public class HolaMundo {
 
     public static void main(String args[]) {
-        var nombre = "Christian Roberto";
-        var apellidos = "Garcia Gutierrez";
-
-        var nombreCompleto = nombre + " " + apellidos;
-        System.out.println("nombreCompleto = " + nombreCompleto);
-
-        //Para alinear caracteres clic derechos + Format
-        //Palabras reservadas en JAVA
-            //abstract	continue	for	new	switch
-            //assert	default	goto	package	synchronized
-            //boolean	do	if	private	this
-            //break	double	implements	protected	throw
-            //byte	else	import	public	thows
-            //case	enum	instanceof	return	transient
-            //catch	extends	int	short	try
-            //char	final	interface	static	void
-            //class	finally	long	strictfp	volatile
-            //const	float	native	super	while
+        // Con diagonal invertida + n "\n" da un salto de linea
+        var nombre = "Saira";
+        System.out.println("Nueva linea: \n" + nombre);
         
-        var i = 3;
-        var j = 5;
-        System.out.println(i + j);
-        System.out.println(i +j +nombreCompleto);
+        // Con diagonal invertida + t "\t" da un sangria de espacio
+        System.out.println("Sangria: \t" + nombre);    
         
-        //Contexto cadena, si encuentra al concatenar primero una cadena, todo lo demás concatenado sera cadena
-        System.out.println(nombreCompleto + i + j);
+        // Caracter de retroceso Elimina el ultimo caracter (De acuerdo a las veces que lo escribas)
+        System.out.println("Sangria: \b" + nombre); 
+        System.out.println("Sangria: \b\b" + nombre); 
         
-        // Con parentesis se eliminaria el contexto cadena
-        System.out.println(nombreCompleto + (i +j));
+        // Caracter de comillas simples coloca todo entre comillas
+        System.out.println("Comilla: \'" + nombre + "\'"); 
+        
+        // Caracter de comillas dobles coloca todo entre comillas dobles \"
+        System.out.println("Comilla: \"" + nombre + "\""); 
+        
     }
 }
