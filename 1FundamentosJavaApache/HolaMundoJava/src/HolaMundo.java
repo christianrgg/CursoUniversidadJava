@@ -2,15 +2,34 @@
 public class HolaMundo {
 
     public static void main(String args[]) {
-       var numeroEntero = 10;
-        System.out.println("numeroEntero = " + numeroEntero);
+        char miCaracter = 'A';
+        System.out.println("miCaracter = " + miCaracter);
+
+        //Lista Unicode
+        char varChar = '\u0022';
+        System.out.println("varChar = " + varChar);
+
+        char varDecimal = 35;
+        System.out.println("varDecimal = " + varDecimal);
+
+        char varSimbolo = '$';
+        System.out.println("varSimbolo = " + varSimbolo);
+
         
-        var numeroFloat = 10.12;
-        System.out.println("numeroFloat = " + numeroFloat);
+        //Inferencia con var en tipo char
+        var varChar2 = '\u0022';
+        System.out.println("varChar2 = " + varChar2);
+
+        var varDecimal2 = (char)35;
+        System.out.println("varDecimal2 = " + varDecimal2);
+
+        var varSimbolo2 = '$';
+        System.out.println("varSimbolo2 = " + varSimbolo2);
         
-        var numeroFloat2 = 10.0F;
-        System.out.println("numeroFloat2 = " + numeroFloat2);
         
-        
+        //Convertir char a entero: Arrojara el decimal del unicode como resultado: 36
+        int variableEnteraSimbolo = '$';
+        System.out.println("variableEnteraSimbolo = " + variableEnteraSimbolo);
+
     }
 }
