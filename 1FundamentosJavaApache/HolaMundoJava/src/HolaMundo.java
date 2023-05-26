@@ -5,25 +5,25 @@ public class HolaMundo {
 
     public static void main(String args[]) {
         //Para los casos switch las comprobaciones puedes ser numericas o strings
-        var numero = 2;
-        var numeroTexto = "Valor desconocido";
+        var mes = 2;
+        var estación = "Caso no encontrado";
 
-        switch(numero) {
-            case 1:
-                numeroTexto = "Numero uno";
+        switch(mes) {
+            case 12: case 1: case 2:
+                estación = "Invierno";
                 break;
-            case 2:
-                numeroTexto = "Numero dos";
+            case 3: case 4: case 5:
+                estación = "Primavera";
                 break;
-            case 3:
-                numeroTexto = "Numero tres";
+            case 6: case 7: case 8:
+                estación = "Verano";
                 break;
-            case 4:
-                numeroTexto = "Numero cuatro";
+            case 9: case 10: case 11:
+                estación = "Otonio";
                 break;
             default:
-                numeroTexto = "Caso no encontrado";
+                estación = "Caso no encontrado";
         }
-        System.out.println("numeroTexto = " + numeroTexto);
+        System.out.println("estación = " + estación);
     }
 }
