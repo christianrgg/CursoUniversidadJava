@@ -4,26 +4,37 @@ import java.util.Scanner;
 public class HolaMundo {
 
     public static void main(String args[]) {
-        //Para los casos switch las comprobaciones puedes ser numericas o strings
-        var mes = 2;
-        var estación = "Caso no encontrado";
+        //INSTRUCCION
+        System.out.println("Ingresa calificación del alumno");
+        //LLANADO CLASE CONSOLA
+        Scanner consola = new Scanner(System.in);
+        //CONVIRTIENDO DATOS DE LA CONSOLA
+        var calificación = Integer.parseInt(consola.nextLine());
+        
+        var letraCalificacion= "Caso no encontrado";
 
-        switch(mes) {
-            case 12: case 1: case 2:
-                estación = "Invierno";
+        switch(calificación) {
+            case 10:
+                letraCalificacion = "A";
                 break;
-            case 3: case 4: case 5:
-                estación = "Primavera";
+            case 9:
+                letraCalificacion = "B";
                 break;
-            case 6: case 7: case 8:
-                estación = "Verano";
+            case 8: 
+                letraCalificacion = "C";
                 break;
-            case 9: case 10: case 11:
-                estación = "Otonio";
+            case 7:
+                letraCalificacion = "D";
+                break;
+            case 6:
+                letraCalificacion = "E";
+                break;
+            case 5: case 4: case 3: case 2: case 1: case 0:
+                letraCalificacion = "F";
                 break;
             default:
-                estación = "Caso no encontrado";
+                letraCalificacion = "No aplica";
         }
-        System.out.println("estación = " + estación);
+        System.out.println("letraCalificacion = " + letraCalificacion);
     }
 }
