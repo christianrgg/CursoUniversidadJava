@@ -4,15 +4,16 @@ import java.util.Scanner;
 public class HolaMundo {
 
     public static void main(String args[]) {
-        System.out.println("Proporciona la altura del Rectangulo en cm:");
+        System.out.println("Ingresa el primer valor:");
         Scanner consola = new Scanner(System.in);
-        var alto = Double.parseDouble(consola.nextLine());
-        System.out.println("Proporciona la anchura del Rectangulo en cm:");
-        var ancho = Double.parseDouble(consola.nextLine());
-        var area = alto * ancho;
-        var perimetro = (alto + ancho)*2;
-        System.out.println("Perimetro: = " + perimetro);
-        System.out.println("Área: = " + area);
-        
+        int valor1 = Integer.parseInt(consola.nextLine());
+        System.out.println("Ingresa el segundo valor:");
+        var valor2 = Integer.parseInt(consola.nextLine());
+        if (valor1 > valor2)  {
+            System.out.println("En número mayor es " + valor1);
+        }
+        else {
+            System.out.println("El número mayor es " + valor2);
+        }
     }
 }
