@@ -1,6 +1,5 @@
 
 /*
-Operadores de relacion: <, >, <=, >=, !=, ==
 Operadores logicos: && o &, || o |, !, ^
 Operadores a nivel de bits: &, |, ^, <<, >>, >>>
 Operador condicional: ?:
@@ -10,31 +9,26 @@ Prioridad y orden de evaluación: (), [], ., - ~ ! ++ --, new(tipo)expresion, <<
 public class HolaMundo {
     
     public static void main(String args[]) {
-        //Operadores relacionales
-        var a = 2;
-        var b = 3;
+        var a = 10;
+        var valorMinimo = 9;
+        var valorMaximo = 10;
         
-        var g = a >= b; //Myot que > o el mayor o igual >=
-        System.out.println("g = " + g);
-        
-        if(a % 2 ==0 ){
-            System.out.println("A es numero par");
+        var resultado = a >= 0 && a <= 10;
+        if(resultado) {
+            System.out.println("Dentro de rango");
         }
         else {
-            System.out.println("A es numero impar");
-        } 
+            System.out.println("Fuera de rangoo");
+        }
         
-        var edad = 30;
-        var adulto = 18;
-        if(edad >= adulto) {
-            System.out.println("Es mayor de edad");
+        var vacaciones = true;
+        var diaDescanso = false;
+        
+        if(vacaciones || diaDescanso) {
+            System.out.println("Tiempo libre, Puede viajar");
         }
         else {
-            System.out.println("Es menor de edad");
+            System.out.println("No puede, debe trabajar");
         }
-        
-        
-        
-
     }
 }
