@@ -4,25 +4,26 @@ import java.util.Scanner;
 public class HolaMundo {
 
     public static void main(String args[]) {
-        var mes = 10;
-        var estacion = "";
-        
-        if(mes ==1 || mes == 2 || mes == 12) {
-            estacion = "Es invierno";
+        //Para los casos switch las comprobaciones puedes ser numericas o strings
+        var numero = 2;
+        var numeroTexto = "Valor desconocido";
+
+        switch(numero) {
+            case 1:
+                numeroTexto = "Numero uno";
+                break;
+            case 2:
+                numeroTexto = "Numero dos";
+                break;
+            case 3:
+                numeroTexto = "Numero tres";
+                break;
+            case 4:
+                numeroTexto = "Numero cuatro";
+                break;
+            default:
+                numeroTexto = "Caso no encontrado";
         }
-        else if(mes ==3 || mes == 4 || mes == 5) {
-            estacion = "Es primavera";
-        }
-        else if(mes ==6 || mes == 7 || mes == 8) {
-            estacion = "Es verano";
-        }
-        else if(mes == 9 || mes == 10 || mes == 11) {
-            estacion = "Es otoño";
-        }
-        else {
-            estacion = "Estacion desconocida";
-        }
-        System.out.println("estacion = " + estacion);
-        
+        System.out.println("numeroTexto = " + numeroTexto);
     }
 }
