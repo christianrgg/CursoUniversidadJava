@@ -1,20 +1,28 @@
 
 /*
-Operadores logicos: && o &, || o |, !, ^
+
 Operadores a nivel de bits: &, |, ^, <<, >>, >>>
-Operador condicional: ?:
 Prioridad y orden de evaluación: (), [], ., - ~ ! ++ --, new(tipo)expresion, << >> >>>, < > <= >=, == !=, &, ||, ?:
 */
 
 public class HolaMundo {
     
     public static void main(String args[]) {
-        var resultado = (1>2) ? "Verdadero" : "Falso";
+        //Orden en que se evaluan los operadores en JAVA
+        // https://res.cloudinary.com/ddfzagwob/image/upload/v1685065738/Recursos_Academicos/prioridad_op2jj5.png
+        var x = 5;
+        var y = 10;
+        var z = ++x + y--;
+        
+        System.out.println("x = " + x); //6
+        System.out.println("y = " + y); //9
+        System.out.println("z = " + z); //16
+        
+        //4+((5*6)/3) = 14
+        var resultado = 4 + 5 * 6 / 3;
         System.out.println("resultado = " + resultado);
         
-        
-        var numero = 8;
-        resultado = (numero % 2 == 0) ? "Numero Par" : "Numero Impar";
+        resultado = (4+5)*6/3; //18 ---> (9*6)/3
         System.out.println("resultado = " + resultado);
     }
 }
