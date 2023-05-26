@@ -10,24 +10,31 @@ Prioridad y orden de evaluación: (), [], ., - ~ ! ++ --, new(tipo)expresion, <<
 public class HolaMundo {
     
     public static void main(String args[]) {
-        var a = 3;
-        var b = 2;
+        //Operadores relacionales
+        var a = 2;
+        var b = 3;
         
-        var c = (a==b);
-        System.out.println("c = " + c);
+        var g = a >= b; //Myot que > o el mayor o igual >=
+        System.out.println("g = " + g);
         
-        var d  = a != b;
-        System.out.println("d = " + d);
+        if(a % 2 ==0 ){
+            System.out.println("A es numero par");
+        }
+        else {
+            System.out.println("A es numero impar");
+        } 
         
-        //Procedimiento para variables cadena
-        var cadena = "Hola";
-        var cadena2 = "hola";
-        var e = cadena == cadena2; //Compara referencias de objetos de la variable (string, var, int)
-        System.out.println("e = " + e);
+        var edad = 30;
+        var adulto = 18;
+        if(edad >= adulto) {
+            System.out.println("Es mayor de edad");
+        }
+        else {
+            System.out.println("Es menor de edad");
+        }
         
-        //Para evaluar si una cadena es igual a otra en contenido
-        var f = cadena.equals(cadena2);
-        System.out.println("f = " + f);
+        
+        
 
     }
 }
