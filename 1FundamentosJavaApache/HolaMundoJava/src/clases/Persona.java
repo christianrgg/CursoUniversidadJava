@@ -14,11 +14,13 @@ public class Persona {
     String nombre;
     String apellido;
     
+    
+    //METODOS DE LA CLASE
     // El public indica que es un metodo global
     // El void indica que no regresa ningun tipo de información
     public  void desplegarInformación(){
-        System.out.println("Nombre:" + nombre);
-        System.out.println("Apellellido:" + apellido);
+        System.out.println("Nombre: " + nombre);
+        System.out.println("Apellellido: " + apellido);
     }
     
     //Para verificar lo que contiene la clase clic en menu window y opción navigation
