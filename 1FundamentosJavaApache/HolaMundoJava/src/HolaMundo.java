@@ -7,11 +7,19 @@ public class HolaMundo {
         //CICLO FOR
         for(var contador = 0; contador < 3; contador++){
             //Se evalua si el numero es par y se rompe con el primer numero par que encuentre. 
-            if(contador % 2 == 0){
-                System.out.println("contador = " + contador);
-                break;
+            if(contador % 2 != 0){
+                continue; // Ir a la siguiente iteración
             }
+            System.out.println("contador = " + contador);
         }
+        
+//         for(var contador = 0; contador < 3; contador++){
+//            //Se evalua si el numero es par y se rompe con el primer numero par que encuentre. 
+//            if(contador % 2 == 0){
+//                System.out.println("contador = " + contador);
+//                break;
+//            }
+//        }
 
 //        Ciclo WHILE
 //        var contador = 0;
