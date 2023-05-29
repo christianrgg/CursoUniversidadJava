@@ -5,10 +5,11 @@ public class HolaMundo {
     
     public static void main(String args[]) {
         //CICLO FOR
+        inicio:
         for(var contador = 0; contador < 3; contador++){
             //Se evalua si el numero es par y se rompe con el primer numero par que encuentre. 
             if(contador % 2 != 0){
-                continue; // Ir a la siguiente iteración
+                continue inicio; // Vuelve a la etiqueta inicio, Seria util solo cuando tenemos ciclos anidados. No es recomendable. Funciona con break y continue
             }
             System.out.println("contador = " + contador);
         }
