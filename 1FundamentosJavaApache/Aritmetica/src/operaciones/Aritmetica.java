@@ -17,8 +17,15 @@ public class Aritmetica {
     public int sumarConRetorno(){
 //        int resultado = a + b;
 //        return resultado;
-          return a + b;
-        
+          return a + b; 
+    }
+    
+    //Metodo con argumentos
+    public int sumarConArgumentos(int arg1, int arg2){
+        a = arg1;
+        b= arg2;
+//        return a+b;
+        return sumarConRetorno();
     }
 }
 
