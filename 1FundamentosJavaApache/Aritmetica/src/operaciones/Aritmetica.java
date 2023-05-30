@@ -21,3 +21,11 @@ public class Aritmetica {
         
     }
 }
+
+//PASOS PARA DEBUGUEAR
+//1. Pon el punto de ruptura
+//2. Clic derecho "debug file"
+//3. Ir visualizando la ejecución
+//4. Para entrar a algun metodo hacer doble clic sobre y debe seleccionarse
+//5. Luego clic en boton "Step Into F7"
+//6. Seguir debuggueando con "Step Over F8"
