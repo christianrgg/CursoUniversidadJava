@@ -5,9 +5,17 @@ public class Aritmetica {
     int a;
     int b;
     
+    //Las clases por default crean un constructor llamado igual que la clase 
+    //Se pueden crear los propios constructores. 
+    
+    //constructor vacio
+    public Aritmetica(){
+        System.out.println("Ejecutando constructor");
+    }
+    
+    
+    
     //Metodo
-    //primera letra minutscula, de ahi uppercase
-    //Void indica que este metodo no regresa nada
     public void sumar(){
         int resultado = a + b;
         System.out.println("resultado = " + resultado);
@@ -17,16 +25,15 @@ public class Aritmetica {
     public int sumarConRetorno(){
 //        int resultado = a + b;
 //        return resultado;
-          return a + b; 
+          return this.a + this.b; 
     }
     
     //Metodo con argumentos
-    public int sumarConArgumentos(int a, int b){
-        this.a = a;
-        this.b= a;
+    public int sumarConArgumentos(int a, int b){ 
+        this.a = a; 
+        this.b= b; 
 //        return a+b;
         return this.sumarConRetorno();
     }
 }
 
-// this hace referencia a un atributo de nuestra clase y no de nuestra variable local
