@@ -13,6 +13,14 @@ public class Aritmetica {
         System.out.println("Ejecutando constructor");
     }
     
+    //Cuando ya hay un constructor definido y se agrega uno o dos nuevos se le llama sobrecarga de constructores
+    //Dentro de un metodo o un constructor la inferencia de var no esta permitida se tiene que usar int, boolean etc
+    public Aritmetica(int a, int b){
+        this.a = a;
+        this.b = b;
+        
+    }
+    
     
     
     //Metodo
